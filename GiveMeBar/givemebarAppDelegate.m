@@ -16,9 +16,51 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    if(!self.window && !self.tabBarController){
+        self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+         
+        //self.viewController = [[ViewController alloc] init];
+        //self.window.rootViewController = self.viewController;
+        
+        // instantiate the view controllers:
+        self.firstViewController = [[[FirstViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+        self.secondViewController = [[[SecondViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+        
+        // set the titles for the view controllers:
+        self.firstViewController.title = @"First";
+        self.secondViewController.title = @"Second";
+        
+        
+        UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:@"BarCode SCAN" image:[UIImage imageNamed:@"first.png"] tag:0];
+        UITabBarItem *item2 = [[UITabBarItem alloc] initWithTitle:@"QR SCAN" image:[UIImage imageNamed:@"second.png"] tag:0];
+        
+       // self.firstViewController.tabBarItem.title = @"First View";
+       // self.secondViewController.tabBarItem.title = @"Second View";
+        // set the images to appear in the tab bar:
+       // self.firstViewController.tabBarItem.image = [UIImage imageNamed:@"first.png"];
+       // self.secondViewController.tabBarItem.image = [UIImage imageNamed:@"second.png"];
+        
+        // instantiate the tab bar controller:
+        self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+        //self.tabBarController.delegate = self;
+        
+        self.firstViewController.tabBarItem = item1;
+        self.secondViewController.tabBarItem = item2;
+        
+        // set the tab bar’s view controllers array:
+        self.tabBarController.viewControllers = [NSArray arrayWithObjects:
+                                                 self.secondViewController,
+                                                 self.firstViewController,
+                                                 nil];
+        
+        self.window.rootViewController = self.tabBarController;
+        
+    }else{
+        [self.window addSubview:self.tabBarController.view];
+    }
+ 
+
     [self.window makeKeyAndVisible];
     return YES;
 }
