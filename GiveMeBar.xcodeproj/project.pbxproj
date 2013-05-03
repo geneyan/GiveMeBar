@@ -55,6 +55,8 @@
 		FAB993431732FB01008EE458 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB993401732FB01008EE458 /* SecondViewController.m */; };
 		FAB993441732FB01008EE458 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB993411732FB01008EE458 /* SecondViewController.xib */; };
 		FAB993451732FB01008EE458 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB993411732FB01008EE458 /* SecondViewController.xib */; };
+		FABD4194173442C80041ACCF /* QRImage1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FABD4192173442C80041ACCF /* QRImage1.jpg */; };
+		FABD4195173442C80041ACCF /* QRImage2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FABD4193173442C80041ACCF /* QRImage2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,8 @@
 		FAB9933F1732FB01008EE458 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		FAB993401732FB01008EE458 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		FAB993411732FB01008EE458 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		FABD4192173442C80041ACCF /* QRImage1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QRImage1.jpg; sourceTree = "<group>"; };
+		FABD4193173442C80041ACCF /* QRImage2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QRImage2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,8 @@
 		FAB992AB1732F57B008EE458 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FABD4192173442C80041ACCF /* QRImage1.jpg */,
+				FABD4193173442C80041ACCF /* QRImage2.jpg */,
 				FAB993051732F965008EE458 /* first.png */,
 				FAB993061732F965008EE458 /* second.png */,
 				FAB992AC1732F57B008EE458 /* GiveMeBar-Info.plist */,
@@ -412,6 +418,8 @@
 				FAB993361732FA78008EE458 /* zbar-samples.png in Resources */,
 				FAB9933D1732FAE0008EE458 /* FirstViewController.xib in Resources */,
 				FAB993441732FB01008EE458 /* SecondViewController.xib in Resources */,
+				FABD4194173442C80041ACCF /* QRImage1.jpg in Resources */,
+				FABD4195173442C80041ACCF /* QRImage2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
